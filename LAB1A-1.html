@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+        /* Tukar tema warna kepada Biru */
+        .custom-theme {
+            background-color: #0056b3 !important;
+        }
+
+        .navbar {
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+        }
+
+        .navbar-brand img {
+            width: 45px;
+            height: 45px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 2px solid white;
+        }
+
+        /* Footer Biru Fixed */
+        footer {
+            background-color: #0056b3 !important;
+            color: white;
+        }
+
+        body {
+            padding-bottom: 100px;
+        }
+
+        /* Warna hover/active pada dropdown */
+        .dropdown-item:active {
+            background-color: #0056b3;
+        }
+
+        /*Add your style here (if any)*/
+    </style>
+</head>
+
+<body>
+
+    <header class="custom-theme shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid px-5">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="img/logo.png" alt="Logo">
+                    <span style="font-size: 1.5rem; color: white; margin-left: 10px;">JAVASCRIPT</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="nav" style="font-size: 1.1rem;">
+                    <ul class="navbar-nav ms-auto d-flex gap-3">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">
+                                LAB 1A
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="LAB1A-1.html">LAB 1A-1</a></li>
+                                <li><a class="dropdown-item" href="LAB1A-2.html">LAB 1A-2</a></li>
+                                <li><a class="dropdown-item" href="LAB1A-3.html">LAB 1A-3</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="LAB1B.html">LAB 1B</a></li>
+                        <li class="nav-item"><a class="nav-link" href="LAB1C.html">LAB 1C</a> </li>
+                        <li class="nav-item"><a class="nav-link" href="LAB2A.html">LAB 2A</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">
+                                REPORT
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="Report_LAB1A-1.pdf" target="_blank">Report
+                                        LAB1A-1</a></li>
+                                <li><a class="dropdown-item" href="Report_LAB1A-2.pdf" target="_blank">Report
+                                        LAB1A-2</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mt-5">
+        <section class="text-center mb-5">
+            <h3>JAVASCRIPT LAB ACTIVITY </h3>
+            <h3>PREPARED BY: YOUR NAME (REG. NO)</h3>
+        </section>
+
+        <section class="mt-4">
+            <section class="lab-card">
+                <h2>Steps 1 - 3: Logic & Console</h2>
+                <div class="instruction">
+                    Open the <strong>Browser Console</strong> (F12 > Console) to see the output for variable
+                    declarations and
+                    <code>typeof</code> checks.
+                </div>
+                <button onclick="runConsoleTasks()">Run Console Tasks</button>
+                <p class="note">*This will log Course Name, Student Count, and Data Types to the console.</p>
+            </section>
+
+            <section class="lab-card">
+                <h2>Step 4: Simple UI Output</h2>
+                <div class="instruction">
+                    Test the <code>prompt()</code>, <code>alert()</code>, and <code>confirm()</code> functions.
+                </div>
+                <button onclick="runInteraction()">Start Interaction</button>
+            </section>
+
+            <section class="lab-card"
+                style="border: 2px solid #27ae60; margin-top: 20px; padding: 15px; border-radius: 8px;">
+                <h2 style="color: #27ae60;">Final Task: POS Script</h2>
+                <div class="instruction">
+                    <strong>Scenario:</strong> Calculate a total bill with 6% Service Tax.
+                </div>
+                <p>Price per Item: <strong>RM 15.00</strong></p>
+                <p>Tax Rate: <strong>6%</strong></p>
+
+                <button onclick="runPOS()"
+                    style="background-color: #27ae60; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">
+                    Checkout Now
+                </button>
+            </section>
+        </section>
+    </main>
+
+    <footer class="fixed-bottom text-center py-3">
+        <div class="container">
+            <p class="mb-0"> &copy; 2026 WEB DESIGN TECHNOLOGY | PREPARED BY: YOUR NAME (REG. NO)</p>
+        </div>
+    </footer>
+
+    <script>
+        /* ==========================================
+           STEPS 1, 2 & 3: Variables & Operators
+           ========================================== */
+        function runConsoleTasks() {
+            // Variable Declaration
+            const courseName = "Web Design Technology";
+            let studentCount = 30;
+            let isLabFinished = false;
+
+            console.log("--- Step 1: Variables ---");
+            console.log("Course:", courseName);
+            console.log("Initial Students:", studentCount);
+
+            // Arithmetic
+            let x = 10;
+            let y = 3;
+            console.log("--- Step 2: Arithmetic ---");
+            console.log("Addition (10+3):", x + y);
+            console.log("Remainder (10%3):", x % y);
+
+            // Type Identification
+            console.log("--- Step 3: Data Types ---");
+            console.log("Type of courseName:", typeof courseName);
+            console.log("Type of studentCount:", typeof studentCount);
+            console.log("Type of isLabFinished:", typeof isLabFinished);
+
+            alert("Check your browser console (F12) to see the results!");
+        }
+
+        /* ==========================================
+           STEP 4: Interaction
+           ========================================== */
+        function runInteraction() {
+            let username = prompt("What is your name?");
+            if (username) {
+                alert("Welcome to JS Lab, " + username + "!");
+
+                let proceed = confirm("Do you want to start the lab?");
+                console.log("User wants to proceed:", proceed);
+            }
+        }
+
+        /* ==========================================
+           FINAL TASK: Point-of-Sale (POS)
+           ========================================== */
+        function runPOS() {
+            // Constants
+            const pricePerItem = 15;
+            const taxRate = 0.06;
+
+            // Input
+            let quantity = prompt("How many items do you want to buy?");
+
+            // Validation & Calculation
+            if (quantity !== null && quantity !== "") {
+                let qtyNumber = parseInt(quantity);
+
+                if (!isNaN(qtyNumber) && qtyNumber > 0) {
+                    let subtotal = pricePerItem * qtyNumber;
+                    let totalTax = subtotal * taxRate;
+                    let finalBill = subtotal + totalTax;
+
+                    // Output with 2 decimal places
+                    alert("Order Summary:\n" +
+                        "------------------\n" +
+                        "Quantity: " + qtyNumber + "\n" +
+                        "Subtotal: RM " + subtotal.toFixed(2) + "\n" +
+                        "Service Tax (6%): RM " + totalTax.toFixed(2) + "\n\n" +
+                        "Your total bill is: RM " + finalBill.toFixed(2));
+                } else {
+                    alert("Invalid input! Please enter a valid number.");
+                }
+            }
+        }
+
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

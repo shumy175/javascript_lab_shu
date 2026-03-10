@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+        /* Tukar tema warna kepada Biru */
+        .custom-theme {
+            background-color: #0056b3 !important;
+        }
+
+        .navbar {
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+        }
+
+        .navbar-brand img {
+            width: 45px;
+            height: 45px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 2px solid white;
+        }
+
+        /* Footer Biru Fixed */
+        footer {
+            background-color: #0056b3 !important;
+            color: white;
+        }
+
+        body {
+            padding-bottom: 100px;
+        }
+
+        /* Warna hover/active pada dropdown */
+        .dropdown-item:active {
+            background-color: #0056b3;
+        }
+
+        /*Add your style here (if any)*/
+        /*body { font-family: 'Segoe UI', sans-serif; max-width: 850px; margin: 2rem auto; background-color: #f0f2f5; padding: 20px; color: #333; }*/
+        section {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #2c3e50;
+            border-left: 5px solid #3498db;
+            padding-left: 10px;
+            margin-top: 0;
+        }
+
+        .output-box {
+            background: #2c3e50;
+            color: #27ae60;
+            padding: 15px;
+            border-radius: 6px;
+            font-family: 'Courier New', monospace;
+            margin-top: 10px;
+        }
+
+        .short-note {
+            background: #fff3cd;
+            color: #856404;
+            padding: 15px;
+            border-radius: 6px;
+            margin-top: 15px;
+            border-left: 5px solid #ffc107;
+            display: none;
+            font-size: 0.9rem;
+        }
+
+        input {
+            padding: 8px;
+            width: 100px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            padding: 8px 20px;
+            background: #3498db;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background: #2980b9;
+        }
+
+        code {
+            background: #eee;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-weight: bold;
+            color: #d63384;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="custom-theme shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid px-5">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="img/logo.png" alt="Logo">
+                    <span style="font-size: 1.5rem; color: white; margin-left: 10px;">JAVASCRIPT</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="nav" style="font-size: 1.1rem;">
+                    <ul class="navbar-nav ms-auto d-flex gap-3">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">
+                                LAB 1A
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="LAB1A-1.html">LAB 1A-1</a></li>
+                                <li><a class="dropdown-item" href="LAB1A-2.html">LAB 1A-2</a></li>
+                                <li><a class="dropdown-item" href="LAB1A-3.html">LAB 1A-3</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="LAB1B.html">LAB 1B</a></li>
+                        <li class="nav-item"><a class="nav-link" href="LAB1C.html">LAB 1C</a> </li>
+                        <li class="nav-item"><a class="nav-link" href="LAB2A.html">LAB 2A</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">
+                                REPORT
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="Report_LAB1A-1.pdf" target="_blank">Report
+                                        LAB1A-1</a></li>
+                                <li><a class="dropdown-item" href="Report_LAB1A-2.pdf" target="_blank">Report
+                                        LAB1A-2</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mt-5">
+        <section class="text-center mb-5">
+            <h3>JAVASCRIPT LAB ACTIVITY </h3>
+            <h3>PREPARED BY: YOUR NAME (REG. NO)</h3>
+        </section>
+
+        <section class="mt-4">
+            <header style="text-align: center; margin-bottom: 30px;">
+                <h1>JavaScript Operators Mastery</h1>
+                <p>Follow the steps and observe the Console and UI outputs.</p>
+            </header>
+
+            <section>
+                <h2>Task 1: Basic Arithmetic (Check Console)</h2>
+                <p>This task demonstrates background calculations using <code>+</code>, <code>-</code>, <code>*</code>,
+                    <code>/</code>, <code>**</code>, and <code>%</code>.</p>
+                <button onclick="runTask1()">Run Console Logic</button>
+            </section>
+
+            <section>
+                <h2>Task 2: POS System (Arithmetic & Assignment)</h2>
+                <p>Price: RM 50.00. <strong>Promo:</strong> Buy > 4 units to get RM 20.00 discount.</p>
+                Quantity: <input type="number" id="qty" value="1">
+                <button onclick="runTask2()">Calculate Total</button>
+                <div id="outPOS" class="output-box">Final Total: RM 0.00</div>
+                <div id="notePOS" class="short-note"></div>
+            </section>
+
+            <section>
+                <h2>Task 3: Stock Control (Increment & Decrement)</h2>
+                <p>Simulating inventory updates.</p>
+                Stock Level: <span id="stockVal" style="font-size: 1.5rem; font-weight: bold;">10</span><br><br>
+                <button onclick="runTask3('inc')">Add (+)</button>
+                <button onclick="runTask3('dec')" style="background:#6c757d;">Remove (-)</button>
+                <div id="noteStock" class="short-note"></div>
+            </section>
+
+            <section>
+                <h2>Task 4: Gate Access (Relational & Logical)</h2>
+                <p>Rules: Age 18+ OR (Age 13+ AND Parent present).</p>
+                Age: <input type="number" id="age" placeholder="Age">
+                <label><input type="checkbox" id="parent"> With Parent?</label><br><br>
+                <button onclick="runTask4()" style="background:#27ae60;">Verify Entry</button>
+                <div id="outSecurity" class="output-box">Status: Waiting...</div>
+                <div id="noteSecurity" class="short-note"></div>
+            </section>
+        </section>
+    </main>
+
+    <footer class="fixed-bottom text-center py-3">
+        <div class="container">
+            <p class="mb-0"> &copy; 2026 WEB DESIGN TECHNOLOGY | PREPARED BY: YOUR NAME (REG. NO)</p>
+        </div>
+    </footer>
+
+    <script>
+        // Helper to show explanations
+        function showNote(id, text) {
+            const noteDiv = document.getElementById(id);
+            noteDiv.style.display = 'block';
+            noteDiv.innerHTML = text;
+        }
+
+        // --- TASK 1: ARITHMETIC (BASIC) ---
+        function runTask1() {
+            console.log("--- Task 1: Arithmetic Operations ---");
+            let students = 31;
+            students = students + 1;   // Addition
+            students = students - 2;   // Subtraction
+            students = students * 2;   // Multiplication
+            students = students / 2;   // Division
+            let power = 10 ** 2;       // Exponentiation (100)
+            let remainder = 31 % 2;    // Modulus (1 - Odd)
+
+            console.log("Final Student Count: " + students);
+            console.log("10 to the power of 2: " + power);
+            console.log("Remainder of 31/2: " + remainder);
+            alert("Check Browser Console (F12) for results!");
+        }
+
+        // --- TASK 2: POS SYSTEM (ARITHMETIC & ASSIGNMENT) ---
+        function runTask2() {
+            let price = 50;
+            let qty = parseInt(document.getElementById('qty').value);
+
+            // a. Arithmetic Operator (*)
+            let total = price * qty;
+            let note = "<b>Subtopic (a) Arithmetic:</b> <code>*</code> multiplied " + price + " by " + qty + ".<br>";
+
+            // b. Assignment Operator (-=)
+            if (qty > 4) {
+                total -= 20; // Shorthand for total = total - 20
+                note += "<b>Subtopic (b) Assignment:</b> <code>-=</code> updated the total by subtracting the discount.";
+            }
+
+            document.getElementById('outPOS').textContent = "Final Total: RM " + total.toFixed(2);
+            showNote('notePOS', note);
+        }
+
+        // --- TASK 3: INCREMENT & DECREMENT ---
+        let stock = 10;
+        function runTask3(type) {
+            let note = "";
+            if (type === 'inc') {
+                stock++; // (c) Increment
+                note = "<b>Subtopic (c) Increment:</b> <code>++</code> increased the stock by 1.";
+            } else {
+                stock--; // (c) Decrement
+                note = "<b>Subtopic (c) Decrement:</b> <code>--</code> decreased the stock by 1.";
+            }
+            document.getElementById('stockVal').textContent = stock;
+            showNote('noteStock', note);
+        }
+
+        // --- TASK 4: RELATIONAL & LOGICAL ---
+        function runTask4() {
+            let age = parseInt(document.getElementById('age').value);
+            let hasParent = document.getElementById('parent').checked;
+            let status = document.getElementById('outSecurity');
+
+            if (isNaN(age)) return alert("Please enter a valid age.");
+
+            // d. Relational: >= 
+            // e. Logical: || (OR), && (AND)
+            let isEligible = (age >= 18) || (age >= 13 && hasParent);
+
+            status.textContent = isEligible ? "Status: ACCESS GRANTED ✅" : "Status: ACCESS DENIED ❌";
+            status.style.color = isEligible ? "#27ae60" : "#ff4d4d";
+
+            let note = "<b>Subtopic (d) Relational:</b> <code>>=</code> compared Age (" + age + ") to the limit.<br>";
+            note += "<b>Subtopic (e) Logical:</b> Used <code>||</code> (OR) and <code>&&</code> (AND) to combine rules.";
+            showNote('noteSecurity', note);
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
