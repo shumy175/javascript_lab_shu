@@ -1,22 +1,23 @@
-# 💻 JAVASCRIPT & WEB DESIGN PORTFOLIO
-### Prepared by: [NAMA ANDA] 
-### Registration No: [NO. PENDAFTARAN]
+# 💻 WEB DESIGN & JAVASCRIPT PORTFOLIO
+### Prepared by: [YOUR NAME] 
+### Registration No: [YOUR REGISTRATION NO]
 
-Selamat datang ke repositori latihan amali saya bagi kursus **Web Design Technology**. Repositori ini mengandungi koleksi latihan makmal (Lab Activities) yang memfokuskan kepada pembangunan Frontend menggunakan HTML5, CSS3, Bootstrap 5, dan JavaScript.
+Welcome to my official laboratory repository for the **Web Design Technology** course. This repository serves as a professional showcase of my frontend development journey, focusing on HTML5, CSS3, Bootstrap 5, and JavaScript.
 
 ---
 
 ## 🚀 Live Demo
-Anda boleh melihat hasil kerja saya secara langsung melalui GitHub Pages:
-👉 **[PAUTAN GITHUB PAGES ANDA DI SINI]**
+Experience the interactive version of my projects via GitHub Pages:
+👉 **[INSERT YOUR GITHUB PAGES LINK HERE]**
 
 ---
 
 ## 🛠️ Tech Stack & Skills
 * **Languages:** HTML5, CSS3, JavaScript (ES6+)
-* **Frameworks:** Bootstrap 5.3
+* **Frameworks:** Bootstrap 5.3 (Responsive Design)
+* **Libraries:** Bootstrap Icons, Font Awesome
 * **Tools:** VS Code, Git, GitHub
-* **Features:** Responsive Design, Form Validation, Interactive UI Components
+* **Key Features:** Client-side Validation, DOM Manipulation, Interactive UI Components
 
 ---
 
@@ -27,22 +28,23 @@ Anda boleh melihat hasil kerja saya secara langsung melalui GitHub Pages:
 | **Lab 1A** | Introduction to JavaScript Basics & DOM | ✅ Completed |
 | **Lab 2A** | Interactive UI with Bootstrap Components | ✅ Completed |
 | **Lab 3.3** | Advanced Form Validation (Passport Form) | ✅ Completed |
-| **Reports** | Documentation of activities in PDF format | ✅ Completed |
+| **Reports** | Documentation & Lab Activity Reports (PDF) | ✅ Completed |
 
 ---
 
-## 📝 Lab 3.3 Highlights: Passport Application Form
-Projek terbaru saya dalam repositori ini memfokuskan kepada **Form Validation**:
-* **Client-side Validation:** Menggunakan JavaScript untuk menyemak padanan kata laluan.
-* **Bootstrap Components:** Penggunaan *Floating Labels*, *Input Groups*, dan *Custom Range*.
-* **UX Design:** Paparan ukuran gambar pasport yang tepat (35mm x 45mm) dan maklum balas ralat yang mesra pengguna.
+## 📝 Featured Project: Passport Application Form (Lab 3.3)
+This project highlights advanced **Form Validation** and UX principles:
+* **Advanced Logic:** JavaScript-based Password Matching and custom validation states.
+* **Modern UI:** Implementation of *Floating Labels*, *Input Groups*, and a *Dynamic Range Slider*.
+* **Standard Compliance:** Accurate passport photo container dimensions (35mm x 45mm).
+* **Graceful UX:** Custom success alerts and real-time error feedback without page refresh.
 
 ---
 
 ## 📬 Contact Me
-Jika anda mempunyai sebarang soalan, sila hubungi saya melalui:
-* **Email:** [EMAIL ANDA]
-* **LinkedIn:** [PAUTAN LINKEDIN ANDA]
+Feel free to reach out for collaborations or inquiries:
+* **Email:** [YOUR EMAIL ADDRESS]
+* **LinkedIn:** [YOUR LINKEDIN PROFILE LINK]
 
 ---
 *© 2026 Web Design Technology Portfolio. Built with ❤️.*
