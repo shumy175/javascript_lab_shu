@@ -1,6 +1,6 @@
 # 💻 WEB DESIGN & JAVASCRIPT PORTFOLIO
-### Prepared by: [YOUR NAME] 
-### Registration No: [YOUR REGISTRATION NO]
+### Prepared by: [shu] 
+### Registration No: [jtmk@psp]
 
 Welcome to my official laboratory repository for the **Web Design Technology** course. This repository serves as a professional showcase of my frontend development journey, focusing on HTML5, CSS3, Bootstrap 5, and JavaScript.
 
